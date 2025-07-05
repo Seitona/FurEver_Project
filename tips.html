@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurEver - Pet Care Tips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img src="assets/logo.svg" alt="FurEver Home" class="logo">
+            </a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html" class="nav-link">HOME</a></li>
+            <li><a href="adopt.html" class="nav-link">ADOPT</a></li>
+            <li><a href="vet.html" class="nav-link">VET ACCESS</a></li>
+            <li><a href="tips.html" class="nav-link active">TIPS</a></li>
+            <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="navbar-auth">
+            <a href="signup.html" class="auth-btn signup-btn">SIGN UP</a>
+            <a href="login.html" class="auth-btn login-btn">LOGIN</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="tips-hero">
+        <div class="container">
+            <h1>Pet Care Tips & Resources</h1>
+            <p>Expert advice to keep your furry friends happy and healthy</p>
+        </div>
+    </section>
+
+    <section class="tips-section container">
+        <div class="section-title">
+            <h2>Latest Articles</h2>
+        </div>
+        
+        <div class="tips-categories">
+            <button class="category-btn active" data-category="all">All Topics</button>
+            <button class="category-btn" data-category="health">Health</button>
+            <button class="category-btn" data-category="training">Training</button>
+            <button class="category-btn" data-category="nutrition">Nutrition</button>
+            <button class="category-btn" data-category="behavior">Behavior</button>
+        </div>
+        
+        <div class="tips-grid">
+            <div class="tip-card" data-category="health">
+                <img src="assets/tip1.jpg" alt="Pet Health Check" class="tip-image">
+                <div class="tip-content">
+                    <h3>Essential Vaccinations for Your New Pet</h3>
+                    <div class="tip-meta">
+                        <span><i class="far fa-calendar-alt"></i> June 15, 2025</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <p>Learn about the core vaccinations every pet needs and the recommended schedule for keeping them protected against common diseases.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="tip-card" data-category="training">
+                <img src="assets/tip2.jpg" alt="Dog Training" class="tip-image">
+                <div class="tip-content">
+                    <h3>Basic Obedience Training for Dogs</h3>
+                    <div class="tip-meta">
+                        <span><i class="far fa-calendar-alt"></i> June 10, 2025</span>
+                        <span><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <p>Step-by-step guide to teaching your dog essential commands like sit, stay, come, and heel using positive reinforcement techniques.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="tip-card" data-category="nutrition">
+                <img src="assets/tip3.jpg" alt="Pet Food" class="tip-image">
+                <div class="tip-content">
+                    <h3>Choosing the Right Food for Your Cat</h3>
+                    <div class="tip-meta">
+                        <span><i class="far fa-calendar-alt"></i> June 5, 2025</span>
+                        <span><i class="far fa-clock"></i> 6 min read</span>
+                    </div>
+                    <p>Understand the nutritional needs of cats at different life stages and how to select the best food for your feline companion.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="tip-card" data-category="behavior">
+                <img src="assets/tip4.jpg" alt="Cat Behavior" class="tip-image">
+                <div class="tip-content">
+                    <h3>Understanding Your Cat's Body Language</h3>
+                    <div class="tip-meta">
+                        <span><i class="far fa-calendar-alt"></i> May 28, 2025</span>
+                        <span><i class="far fa-clock"></i> 7 min read</span>
+                    </div>
+                    <p>Decode the subtle signals in your cat's posture, tail movements, and vocalizations to better understand their mood and needs.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="tip-card" data-category="health">
+                <img src="assets/tip5.jpg" alt="Dog Grooming" class="tip-image">
+                <div class="tip-content">
+                    <h3>Grooming Tips for Different Dog Breeds</h3>
+                    <div class="tip-meta">
+                        <span><i class="far fa-calendar-alt"></i> May 20, 2025</span>
+                        <span><i class="far fa-clock"></i> 9 min read</span>
+                    </div>
+                    <p>Learn how to properly groom your dog based on their coat type, with specific recommendations for different breeds.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="tip-card" data-category="training">
+                <img src="assets/tip6.jpg" alt="Litter Training" class="tip-image">
+                <div class="tip-content">
+                    <h3>Litter Box Training for Kittens</h3>
+                    <div class="tip-meta">
+                        <span><i class="far fa-calendar-alt"></i> May 15, 2025</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <p>Comprehensive guide to successfully litter training your new kitten, including troubleshooting common problems.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section about">
+                <img src="assets/logo-white.svg" alt="FurEver" class="footer-logo">
+                <p>Connecting loving homes with pets in need since 2020.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html">Adopt a Pet</a></li>
+                    <li><a href="vet.html">Find a Vet</a></li>
+                    <li><a href="tips.html">Pet Care Tips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Pet Street, Animal City</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@furever.com</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new pets and events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FurEver. All rights reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

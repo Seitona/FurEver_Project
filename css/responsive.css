@@ -1,0 +1,134 @@
+/* Mobile First Approach */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-auth {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .navbar-auth.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.8rem;
+    }
+
+    .about-section,
+    .featured-pet {
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .about-image,
+    .pet-image {
+        margin-top: 2rem;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-image {
+        display: none;
+    }
+
+    .pets-hero,
+    .vet-hero,
+    .tips-hero,
+    .contact-hero {
+        height: 40vh;
+    }
+
+    .search-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .pet-filters,
+    .tips-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn,
+    .category-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-tagline {
+        font-size: 2rem;
+    }
+
+    .about-section,
+    .featured-pet {
+        gap: 2rem;
+    }
+
+    .section-title h2::before,
+    .section-title h2::after {
+        width: 30px;
+    }
+
+    .section-title h2::before {
+        left: -50px;
+    }
+
+    .section-title h2::after {
+        right: -50px;
+    }
+}
