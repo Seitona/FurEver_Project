@@ -97,7 +97,7 @@ img {
 }
 
 .logo {
-    height: 50px;
+    height: 100px;
     transition: transform 0.3s ease;
 }
 
@@ -192,7 +192,7 @@ img {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/welcome_adopt.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -277,6 +277,7 @@ img {
 }
 
 .pet-image {
+    margin: 20px;
     flex: 1;
     border-radius: 15px;
     overflow: hidden;
@@ -319,7 +320,7 @@ footer {
 }
 
 .footer-logo {
-    height: 50px;
+    height: 100px;
     margin-bottom: 1rem;
 }
 
@@ -417,7 +418,7 @@ footer {
 
 /* Adopt Page Styles */
 .pets-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/adopt-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/adopt_bg.webp');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -426,6 +427,10 @@ footer {
     color: var(--white);
     text-align: center;
     position: relative;
+}
+
+.pets-hero h1{
+    color: peachpuff; 
 }
 
 .search-container {
@@ -588,7 +593,7 @@ footer {
 
 /* Vet Page Styles */
 .vet-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/vet-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/vet.webp');
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -596,6 +601,10 @@ footer {
     align-items: center;
     color: var(--white);
     text-align: center;
+}
+
+.vet-hero h1{
+    color: greenyellow;
 }
 
 .vet-services {
@@ -667,6 +676,10 @@ footer {
     align-items: center;
     color: var(--white);
     text-align: center;
+}
+
+.tips-hero h1{
+    color: lightseagreen;
 }
 
 .tips-section {
@@ -757,6 +770,10 @@ footer {
     align-items: center;
     color: var(--white);
     text-align: center;
+}
+
+.contact-hero h1{
+    color: yellow;
 }
 
 .contact-section {
@@ -875,6 +892,7 @@ textarea.form-control {
 .auth-image {
     flex: 1;
     background: url('../assets/auth-pets.jpg') center/cover no-repeat;
+    background-repeat: no-repeat;
 }
 
 .auth-form h2 {
