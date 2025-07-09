@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Check if already adopted
+    // Check if already adopted - FIXED: Added missing closing parenthesis
     const currentUser = getCurrentUser();
-    if (currentUser?.adoptedPets?.includes(petId) {
+    if (currentUser?.adoptedPets?.includes(petId)) {
         if (adoptBtn) {
             adoptBtn.textContent = 'Already Adopted';
             adoptBtn.disabled = true;
