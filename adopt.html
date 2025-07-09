@@ -24,8 +24,7 @@
             <li><a href="contact.html" class="nav-link">CONTACT</a></li>
         </ul>
         <div class="navbar-auth">
-            <a href="signup.html" class="auth-btn signup-btn">SIGN UP</a>
-            <a href="login.html" class="auth-btn login-btn">LOGIN</a>
+            <!-- Will be populated by account.js -->
         </div>
         <div class="mobile-menu-btn">
             <i class="fas fa-bars"></i>
@@ -57,9 +56,10 @@
         </div>
         
         <div class="pets-grid">
+            <!-- Dog 1 -->
             <div class="pet-card" data-category="dog">
                 <div class="pet-image-container">
-                    <img src="..assets/Toffy.jpg" alt="Toffy Golden Retriever" class="pet-image">
+                    <img src="assets/Toffy.jpg" alt="Toffy Golden Retriever" class="pet-image">
                     <div class="pet-badge">Available</div>
                 </div>
                 <div class="pet-info">
@@ -70,15 +70,16 @@
                         <p><i class="fas fa-map-marker-alt"></i> Metro Manila</p>
                     </div>
                     <div class="pet-actions">
-                        <a href="#" class="btn btn-secondary">View Details</a>
-                        <a href="#" class="btn btn-primary">Adopt</a>
+                        <a href="pet-details.html?id=1" class="btn btn-secondary">View Details</a>
+                        <button class="btn btn-primary adopt-btn" data-pet-id="1">Adopt</button>
                     </div>
                 </div>
             </div>
             
+            <!-- Cat 1 -->
             <div class="pet-card" data-category="cat">
                 <div class="pet-image-container">
-                    <img src="..assets/Lili.jpg" alt="Lili Siberian Cat" class="pet-image">
+                    <img src="assets/Lili.jpg" alt="Lili Siberian Cat" class="pet-image">
                     <div class="pet-badge">Available</div>
                 </div>
                 <div class="pet-info">
@@ -89,15 +90,16 @@
                         <p><i class="fas fa-map-marker-alt"></i> Quezon City</p>
                     </div>
                     <div class="pet-actions">
-                        <a href="#" class="btn btn-secondary">View Details</a>
-                        <a href="#" class="btn btn-primary">Adopt</a>
+                        <a href="pet-details.html?id=2" class="btn btn-secondary">View Details</a>
+                        <button class="btn btn-primary adopt-btn" data-pet-id="2">Adopt</button>
                     </div>
                 </div>
             </div>
             
+            <!-- Bird 1 -->
             <div class="pet-card" data-category="bird">
                 <div class="pet-image-container">
-                    <img src="..assets/Coco.jpg" alt="Coco Parrot" class="pet-image">
+                    <img src="assets/Coco.jpg" alt="Coco Parrot" class="pet-image">
                     <div class="pet-badge">Available</div>
                 </div>
                 <div class="pet-info">
@@ -108,8 +110,68 @@
                         <p><i class="fas fa-map-marker-alt"></i> Makati City</p>
                     </div>
                     <div class="pet-actions">
-                        <a href="#" class="btn btn-secondary">View Details</a>
-                        <a href="#" class="btn btn-primary">Adopt</a>
+                        <a href="pet-details.html?id=3" class="btn btn-secondary">View Details</a>
+                        <button class="btn btn-primary adopt-btn" data-pet-id="3">Adopt</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dog 2 -->
+            <div class="pet-card" data-category="dog">
+                <div class="pet-image-container">
+                    <img src="assets/dog2.jpg" alt="Max Labrador" class="pet-image">
+                    <div class="pet-badge">Available</div>
+                </div>
+                <div class="pet-info">
+                    <h3>Max</h3>
+                    <div class="pet-details">
+                        <p><i class="fas fa-paw"></i> Labrador</p>
+                        <p><i class="fas fa-birthday-cake"></i> 2 years old</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pasig City</p>
+                    </div>
+                    <div class="pet-actions">
+                        <a href="pet-details.html?id=4" class="btn btn-secondary">View Details</a>
+                        <button class="btn btn-primary adopt-btn" data-pet-id="4">Adopt</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cat 2 -->
+            <div class="pet-card" data-category="cat">
+                <div class="pet-image-container">
+                    <img src="assets/cat2.jpg" alt="Milo Persian Cat" class="pet-image">
+                    <div class="pet-badge">Available</div>
+                </div>
+                <div class="pet-info">
+                    <h3>Milo</h3>
+                    <div class="pet-details">
+                        <p><i class="fas fa-paw"></i> Persian Cat</p>
+                        <p><i class="fas fa-birthday-cake"></i> 1 year old</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Taguig City</p>
+                    </div>
+                    <div class="pet-actions">
+                        <a href="pet-details.html?id=5" class="btn btn-secondary">View Details</a>
+                        <button class="btn btn-primary adopt-btn" data-pet-id="5">Adopt</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rabbit 1 -->
+            <div class="pet-card" data-category="rabbit">
+                <div class="pet-image-container">
+                    <img src="assets/rabbit1.jpg" alt="Bunny Rabbit" class="pet-image">
+                    <div class="pet-badge">Available</div>
+                </div>
+                <div class="pet-info">
+                    <h3>Bunny</h3>
+                    <div class="pet-details">
+                        <p><i class="fas fa-paw"></i> Holland Lop</p>
+                        <p><i class="fas fa-birthday-cake"></i> 8 months old</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mandaluyong City</p>
+                    </div>
+                    <div class="pet-actions">
+                        <a href="pet-details.html?id=6" class="btn btn-secondary">View Details</a>
+                        <button class="btn btn-primary adopt-btn" data-pet-id="6">Adopt</button>
                     </div>
                 </div>
             </div>
@@ -158,6 +220,50 @@
         </div>
     </footer>
 
+    <script src="js/account.js"></script>
+    <!-- <script>
+    // Adoption button functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.adopt-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const petId = this.getAttribute('data-pet-id');
+                const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+                
+                if (!currentUser) {
+                    if (confirm('You need to login to adopt a pet. Would you like to login now?')) {
+                        window.location.href = 'login.html?redirect=adopt.html';
+                    }
+                    return;
+                }
+                
+                // Get existing adopted pets or initialize empty array
+                let adoptedPets = currentUser.adoptedPets || [];
+                
+                if (!adoptedPets.includes(petId)) {
+                    adoptedPets.push(petId);
+                    currentUser.adoptedPets = adoptedPets;
+                    localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    
+                    // Update in all users array
+                    let users = JSON.parse(localStorage.getItem('users')) || [];
+                    users = users.map(user => {
+                        if (user.email === currentUser.email) {
+                            return currentUser;
+                        }
+                        return user;
+                    });
+                    localStorage.setItem('users', JSON.stringify(users));
+                    
+                    alert('Adoption request submitted! Our team will contact you soon.');
+                    this.textContent = 'Adoption Pending';
+                    this.disabled = true;
+                } else {
+                    alert('You have already adopted this pet!');
+                }
+            });
+        });
+    });
+    </script> -->
     <script src="js/main.js"></script>
 </body>
 </html>

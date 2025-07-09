@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FurEver - Home</title>
+    <title>FurEver - My Profile</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,7 +17,7 @@
             </a>
         </div>
         <ul class="navbar-links">
-            <li><a href="index.html" class="nav-link active">HOME</a></li>
+            <li><a href="index.html" class="nav-link">HOME</a></li>
             <li><a href="adopt.html" class="nav-link">ADOPT</a></li>
             <li><a href="vet.html" class="nav-link">VET ACCESS</a></li>
             <li><a href="tips.html" class="nav-link">TIPS</a></li>
@@ -31,47 +31,60 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to FurEver!</h1>
-            <p class="hero-tagline">Add <span class="highlight">color</span> to their <span class="highlight">life</span></p>
-            <a href="adopt.html" class="btn btn-primary">Find Your Companion</a>
-        </div>
-    </section>
-
-    <section class="about-section container">
-        <div class="about-content">
-            <h2>Who We Are</h2>
-            <p>FurEver is more than just a pet adoption platform — it's a movement to give every animal the love, care, and family they deserve. We rescue abandoned, stray, and surrendered pets, provide them with proper medical attention, and match them with caring individuals ready to give them a forever home.</p>
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">1,200+</span>
-                    <span class="stat-label">Pets Adopted</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Vet Partners</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Love Guaranteed</span>
-                </div>
+    <section class="profile-section container">
+        <div class="profile-header">
+            <h1>My Profile</h1>
+            <div class="profile-actions">
+                <button id="edit-profile-btn" class="btn btn-secondary">Edit Profile</button>
             </div>
         </div>
-        <div class="about-image">
-            <img src="assets/who_we_are2.jpg" alt="Who we are">
-        </div>
-    </section>
-
-    <section class="featured-pet container">
-        <div class="pet-image">
-            <img src="assets/max_dog.png" alt="Max the dog">
-        </div>
-        <div class="pet-info">
-            <h2>Meet Max</h2>
-            <h3>A Survivor Looking for Love</h3>
-            <p>Max was rescued after being found alone and injured on the streets. Despite everything he's been through, he remains gentle, loyal, and full of hope. Max is ready to give his heart to someone who will finally give him the love he deserves.</p>
-            <a href="adopt.html" class="btn btn-secondary">Learn More About Max</a>
+        
+        <div class="profile-content">
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="assets/default-avatar.jpg" alt="Profile Picture" id="profile-picture">
+                    <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+                </div>
+                <div class="profile-details">
+                    <h2 id="profile-name">Loading...</h2>
+                    <p id="profile-email">Loading...</p>
+                </div>
+            </div>
+            
+            <div class="profile-edit-form" style="display: none;">
+                <form id="edit-profile-form">
+                    <div class="form-group">
+                        <label for="edit-fullname">Full Name</label>
+                        <input type="text" id="edit-fullname" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-email">Email Address</label>
+                        <input type="email" id="edit-email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-password">New Password (leave blank to keep current)</label>
+                        <input type="password" id="edit-password" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-confirm-password">Confirm New Password</label>
+                        <input type="password" id="edit-confirm-password" class="form-control">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" id="cancel-edit-btn" class="btn btn-secondary">Cancel</button>
+                </form>
+            </div>
+            
+            <div class="adopted-pets">
+                <h3>My Adopted Pets</h3>
+                <div class="pets-grid" id="adopted-pets-grid">
+                    <!-- Adopted pets will be displayed here -->
+                </div>
+                <p id="no-pets-message" style="display: none;">You haven't adopted any pets yet.</p>
+            </div>
         </div>
     </section>
 
@@ -118,6 +131,7 @@
     </footer>
 
     <script src="js/account.js"></script>
+    <script src="js/profile.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

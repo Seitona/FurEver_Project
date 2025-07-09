@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FurEver - Home</title>
+    <title>FurEver - Pet Details</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,7 +17,7 @@
             </a>
         </div>
         <ul class="navbar-links">
-            <li><a href="index.html" class="nav-link active">HOME</a></li>
+            <li><a href="index.html" class="nav-link">HOME</a></li>
             <li><a href="adopt.html" class="nav-link">ADOPT</a></li>
             <li><a href="vet.html" class="nav-link">VET ACCESS</a></li>
             <li><a href="tips.html" class="nav-link">TIPS</a></li>
@@ -31,47 +31,63 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to FurEver!</h1>
-            <p class="hero-tagline">Add <span class="highlight">color</span> to their <span class="highlight">life</span></p>
-            <a href="adopt.html" class="btn btn-primary">Find Your Companion</a>
+    <section class="pet-details-section container">
+        <div class="pet-details-header">
+            <a href="adopt.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Pets</a>
+            <h1 id="pet-name">Loading...</h1>
         </div>
-    </section>
-
-    <section class="about-section container">
-        <div class="about-content">
-            <h2>Who We Are</h2>
-            <p>FurEver is more than just a pet adoption platform — it's a movement to give every animal the love, care, and family they deserve. We rescue abandoned, stray, and surrendered pets, provide them with proper medical attention, and match them with caring individuals ready to give them a forever home.</p>
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">1,200+</span>
-                    <span class="stat-label">Pets Adopted</span>
+        
+        <div class="pet-details-content">
+            <div class="pet-details-images">
+                <div class="main-image-container">
+                    <img src="" alt="Pet Image" id="main-pet-image" class="main-pet-image">
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Vet Partners</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Love Guaranteed</span>
+                <div class="thumbnail-container" id="thumbnail-container">
+                    <!-- Thumbnails will be added here -->
                 </div>
             </div>
-        </div>
-        <div class="about-image">
-            <img src="assets/who_we_are2.jpg" alt="Who we are">
-        </div>
-    </section>
-
-    <section class="featured-pet container">
-        <div class="pet-image">
-            <img src="assets/max_dog.png" alt="Max the dog">
-        </div>
-        <div class="pet-info">
-            <h2>Meet Max</h2>
-            <h3>A Survivor Looking for Love</h3>
-            <p>Max was rescued after being found alone and injured on the streets. Despite everything he's been through, he remains gentle, loyal, and full of hope. Max is ready to give his heart to someone who will finally give him the love he deserves.</p>
-            <a href="adopt.html" class="btn btn-secondary">Learn More About Max</a>
+            
+            <div class="pet-details-info">
+                <div class="pet-badge available-badge">Available</div>
+                
+                <div class="pet-meta">
+                    <p><i class="fas fa-paw"></i> <span id="pet-breed">Loading...</span></p>
+                    <p><i class="fas fa-birthday-cake"></i> <span id="pet-age">Loading...</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span id="pet-location">Loading...</span></p>
+                    <p><i class="fas fa-venus-mars"></i> <span id="pet-gender">Loading...</span></p>
+                </div>
+                
+                <div class="pet-description">
+                    <h3>About Me</h3>
+                    <p id="pet-description-text">Loading...</p>
+                </div>
+                
+                <div class="pet-actions">
+                    <button id="adopt-btn" class="btn btn-primary">Adopt Me</button>
+                    <button id="favorite-btn" class="btn btn-secondary"><i class="far fa-heart"></i> Favorite</button>
+                </div>
+                
+                <div class="pet-attributes">
+                    <div class="attribute">
+                        <h4>Health</h4>
+                        <div class="progress-bar">
+                            <div class="progress health-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="attribute">
+                        <h4>Energy Level</h4>
+                        <div class="progress-bar">
+                            <div class="progress energy-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="attribute">
+                        <h4>Friendliness</h4>
+                        <div class="progress-bar">
+                            <div class="progress friendliness-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -118,6 +134,7 @@
     </footer>
 
     <script src="js/account.js"></script>
+    <script src="js/pet-details.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
