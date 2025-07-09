@@ -111,10 +111,98 @@ function initAdoptionButtons() {
     });
 }
 
+// Handle signup form submission
+function handleSignupForm() {
+    const signupForm = document.querySelector('.auth-form-content');
+    if (!signupForm) return;
+    
+    signupForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        const fullName = document.getElementById('fullname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        const termsAccepted = document.getElementById('terms').checked;
+        
+        // Validation
+        if (!fullName || !email || !password || !confirmPassword) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        if (password !== confirmPassword) {
+            alert('Passwords do not match');
+            return;
+        }
+        
+        if (password.length < 6) {
+            alert('Password must be at least 6 characters long');
+            return;
+        }
+        
+        if (!termsAccepted) {
+            alert('Please accept the terms of service');
+            return;
+        }
+        
+        // Create account
+        if (createAccount(fullName, email, password)) {
+            alert('Account created successfully!');
+            window.location.href = 'index.html';
+        }
+    });
+}
+
+// Handle login form submission
+function handleLoginForm() {
+    const loginForm = document.querySelector('.auth-form-content');
+    if (!loginForm) return;
+    
+    loginForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        
+        // Validation
+        if (!email || !password) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        // Attempt login
+        if (login(email, password)) {
+            alert('Login successful!');
+            
+            // Check for redirect parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirect = urlParams.get('redirect');
+            
+            if (redirect) {
+                window.location.href = decodeURIComponent(redirect);
+            } else {
+                window.location.href = 'index.html';
+            }
+        } else {
+            alert('Invalid email or password');
+        }
+    });
+}
+
 // Initialize navbar and other elements on page load
 document.addEventListener('DOMContentLoaded', function() {
     updateNavbarAuth();
     initAdoptionButtons();
+    
+    // Initialize form handlers based on current page
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    if (currentPage === 'signup.html') {
+        handleSignupForm();
+    } else if (currentPage === 'login.html') {
+        handleLoginForm();
+    }
     
     // Add logout event listener if logout button exists
     const logoutBtn = document.getElementById('logout-btn');
