@@ -1281,3 +1281,96 @@ textarea.form-control {
         height: 300px;
     }
 }
+/*Privacy at Terms*/
+/* Page Template Styles (Privacy Policy & Terms of Use) */
+.page-header {
+  background-color: #D0B49F;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #2e2e2e;
+  margin: 0;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #3a3a3a;
+}
+
+.page-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  margin-top: 30px;
+  color: #6b4c3b;
+}
+
+.page-content p,
+.page-content li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.page-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.page-content a {
+  color: #b57b4a;
+  text-decoration: none;
+}
+
+.page-content a:hover {
+  text-decoration: underline;
+}
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-buttons a {
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-signup {
+  border: 2px solid #1f1b18;
+  background-color: transparent;
+  color: #1f1b18;
+}
+
+.nav-signup:hover {
+  background-color: #1f1b18;
+  color: #fff;
+}
+
+.nav-login {
+  background-color: #1f1b18;
+  color: #ffffff;
+  border: none;
+}
+
+.nav-login:hover {
+  background-color: #000000;
+}
