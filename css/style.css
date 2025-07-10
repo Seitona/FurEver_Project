@@ -1325,9 +1325,13 @@ textarea.form-control {
 .site-footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #333;
+  background-color: var(--accent-color);
   color: #fff;
   margin-top: 60px;
+}
+
+.site-footer a{
+    color: var(--primary-color);
 }
 
 .page-content a {
