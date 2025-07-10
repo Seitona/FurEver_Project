@@ -1378,3 +1378,33 @@ textarea.form-control {
 .nav-login:hover {
   background-color: #000000;
 }
+.minimal-header {
+  background-color: #d2b49c;
+  padding: 20px 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-logo {
+  height: 45px;
+}
+
+.logo-link {
+  display: inline-block;
+}
+.minimal-header {
+  background-color: #d2b49c;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-logo {
+  height: 45px;
+  display: block;
+}
